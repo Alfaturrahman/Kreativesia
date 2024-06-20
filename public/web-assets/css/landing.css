@@ -1,0 +1,132 @@
+:root{
+    --background-color: #ffffff;
+    --text-color: #111827;
+    --hard-color: #c98f8f;
+    --soft-color: #e7c7c6;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+#section-1 .container .row .col-lg-7 h1{
+    font-size: 50px;
+    max-width: 500px;
+}
+
+#section-2{
+    background: url('/web-assets/image/waves-section-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#section-2 .container .row .col-lg-8 h1{
+    font-size: 50px;
+    max-width: 500px;
+}
+
+#section-2 .container .row .col-lg-8 .btn{
+    background-color: var(--soft-color);
+    box-shadow: 10px 10px 3px var(--shadow-color);
+    transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#section-2 .container .row .col-lg-8 .btn:hover{
+    background-color: var(--hard-color);
+    color: var(--background-color);
+    box-shadow: 15px 15px 5px var(--shadow-color);
+}
+
+#section-3{
+    background: url('/web-assets/image/waves-section-3.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-3 .container .row .col-lg-7 h1{
+    font-size: 38px;
+    max-width: 500px;
+}
+
+#section-3 .container .row .col-lg-5 .card{
+    box-shadow: 20px 15px 5px var(--shadow-color);
+}
+
+#section-3 .container .row .col-lg-5 .card .card-img-top{
+    height: 350px;
+    object-fit: cover;
+}
+
+#section-4{
+    background: url('/web-assets/image/waves-section-4.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff6f6;
+}
+
+#section-4 .container .heading span {
+    position: relative;
+}
+
+#section-4 .container .heading span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust this value to control the skew effect */
+    width: calc(100% + 20px); /* Add extra width to account for the skew */
+    height: 100%;
+    background-color: var(--soft-color); /* Set the background color */
+    box-shadow: 10px 10px 5px var(--shadow-color);
+    z-index: -1;
+    transform: translate(0,0) rotate(0) skewX(0) skewY(-3deg) scaleX(1) scaleY(1);
+}
+
+#section-4 .container .d-flex .flow-content{
+    width: 20rem;
+    min-height: 30rem;
+}
+
+#section-4 .container .d-flex .flow-content .rounded-circle{
+    height: 20rem;
+    overflow: hidden;
+}
+
+#section-4 .container .d-flex .flow-content .text-content{
+    background-color: var(--soft-color);
+    box-shadow: 0px 5px 1px var(--hard-color);
+    min-height: 10.5rem;
+}
+
+#section-5{
+    background: url('/web-assets/image/waves-section-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-5 .container .row .col .card{
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+#section-5 .container .row .col .card .card-img-top{
+    height: 350px;
+}
+
+@media (min-width: 768px) {
+    #section-1 .container .row .col-lg-7 h1{
+        font-size: 64px;
+        max-width: 500px;
+    }
+
+    #section-2 .container .row .col-lg-8 h1{
+        font-size: 64px;
+        max-width: 500px;
+    }
+
+    #section-3 .container .row .col-lg-7 h1{
+        font-size: 50px;
+        max-width: 500px;
+    }
+}
+
